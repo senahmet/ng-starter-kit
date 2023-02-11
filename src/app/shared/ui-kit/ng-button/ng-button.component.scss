@@ -1,0 +1,83 @@
+@use "../style/colors";
+@use "../style/typography";
+
+.mdc-button.ngui-button {
+  transition-duration: 200ms;
+  transition-delay: 0s;
+  transition-timing-function: ease;
+  font-family: typography.$ngui-font-family;
+  font-weight: typography.$ngui-font-weight;
+
+
+  &.ngui-standard:not(:disabled) {
+    border: 1px solid darken(colors.$ngui-light-color, 25%);
+    color: darken(colors.$ngui-theme-dark-color, 25%);
+    background-color: colors.$ngui-light-color;
+
+    &.active {
+      border-color: darken(colors.$ngui-light-color, 25%);
+      color: colors.$ngui-dark-color;
+      background-color: lighten(colors.$ngui-light-color, 25%);
+    }
+
+    &.hover {
+      color: colors.$ngui-dark-color;
+      background-color: colors.$ngui-light-color;
+    }
+  }
+
+  &.ngui-standard:disabled {
+    border: 1px solid darken(colors.$ngui-light-color, 10%);
+  }
+
+  &.ngui-action:not(:disabled) {
+    border: 1px solid darken(colors.$ngui-action-color, 25%);
+    color: colors.$ngui-white;
+    background-color: colors.$ngui-action-color;
+
+    &.active {
+      border-color: darken(colors.$ngui-action-color, 25%);
+      color: colors.$ngui-white;
+      background-color: lighten(colors.$ngui-action-color, 25%);
+    }
+
+    &.hover {
+      color: colors.$ngui-white;
+      background-color: colors.$ngui-action-color;
+    }
+  }
+
+  &.ngui-action:disabled {
+    border: 1px solid lighten(colors.$ngui-action-color, 35%);
+    color: darken(colors.$ngui-white, 5%);
+    background-color: lighten(colors.$ngui-action-color, 40%);
+  }
+
+  &.ngui-danger:not(:disabled) {
+    border: 1px solid darken(colors.$ngui-danger-color, 25%);
+    color: colors.$ngui-white;
+    background-color: colors.$ngui-danger-color;
+
+    &.active {
+      border-color: darken(colors.$ngui-danger-color, 25%);
+      color: colors.$ngui-white;
+      background-color: lighten(colors.$ngui-danger-color, 25%);
+    }
+
+    &.hover {
+      color: colors.$ngui-white;
+      background-color: colors.$ngui-danger-color;
+    }
+  }
+
+  &.ngui-danger:disabled {
+    border: 1px solid lighten(colors.$ngui-danger-color, 15%);
+    color: darken(colors.$ngui-white, 5%);
+    background-color: lighten(colors.$ngui-danger-color, 20%);
+  }
+
+  &.ngui-small {
+    height: 24px !important;
+    width: unset !important;
+  }
+}

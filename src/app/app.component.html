@@ -1,0 +1,82 @@
+<router-outlet>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="row">
+          <div class="col-md-12 m-1">
+            <div class="row">
+              <div class="col-md-12">
+                <h6>Buttons</h6>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <ng-button type="standard">something</ng-button>
+              </div>
+              <div class="col-md-3">
+                <ng-button type="action">something</ng-button>
+              </div>
+              <div class="col-md-3">
+                <ng-button type="danger">something</ng-button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 m-1">
+            <div class="row">
+              <div class="col-md-3">
+                <ng-button type="standard" [disabled]="true"
+                >something</ng-button
+                >
+              </div>
+              <div class="col-md-3">
+                <ng-button type="action" [disabled]="true">something</ng-button>
+              </div>
+              <div class="col-md-3">
+                <ng-button type="danger" [disabled]="true">something</ng-button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 m-1">
+            <div class="row">
+              <div class="col-md-12">
+                <h6>Small buttons</h6>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <ng-button type="standard" [small]="true">something</ng-button>
+              </div>
+              <div class="col-md-3">
+                <ng-button type="action" [small]="true">something</ng-button>
+              </div>
+              <div class="col-md-3">
+                <ng-button type="danger" [small]="true">something</ng-button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 m-1">
+            <div class="row">
+              <div class="col-md-3">
+                <ng-button type="standard" [disabled]="true" [small]="true"
+                  >something</ng-button
+                >
+              </div>
+              <div class="col-md-3">
+                <ng-button type="action" [disabled]="true" [small]="true"
+                  >something</ng-button
+                >
+              </div>
+              <div class="col-md-3">
+                <ng-button type="danger" [disabled]="true" [small]="true"
+                  >something</ng-button
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</router-outlet>

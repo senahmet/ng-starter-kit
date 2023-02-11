@@ -1,0 +1,16 @@
+$ngui-font-family: Roboto, "Helvetica Neue", sans-serif;
+$ngui-font-size: 14px;
+// font-sizes for headers
+$ngui-font-weight: 500;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $ngui-font-family;
+  font-weight: $ngui-font-weight;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

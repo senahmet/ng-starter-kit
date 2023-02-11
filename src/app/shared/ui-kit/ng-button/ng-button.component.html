@@ -1,0 +1,14 @@
+<button
+  mat-flat-button
+  type="button"
+  class="ngui-button"
+  onfocus="blur()"
+  [disabled]="disabled"
+  [class.ngui-standard]="type === 'standard'"
+  [class.ngui-action]="type === 'action'"
+  [class.ngui-danger]="type === 'danger'"
+  [class.ngui-small]="small"
+  (click)="buttonOnClick()"
+>
+  <ng-content></ng-content>
+</button>
